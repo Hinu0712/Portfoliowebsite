@@ -1,116 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Hinal Patel Portfolio</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    </head>
-    <body>
-        <!-- Header Section -->
-        <header class="bg-dark text-white text-center py-5">
-            <h1>Hinal Patel</h1>
-            <p class="lead">Software Developer | Student </p>
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hinal Patel(Portfolio)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="bg-dark text-white text-center py-5">
+        <h1>Hinal Patel</h1>
+        <p class="lead">Software Developer | Web Developer</p>
+    </header>
 
-        <!-- About Me Section -->
-        <section class="py-5">
-            <div class="container">
-                <h2 class="text-center mb-4">About Me</h2>
-                <p class="text-center">My name is HInal Patel and I am a passionate developer with experience in creating robust and dynamic web applications. I also have experience teaching software development to aspiring developers.</p>
-                <div class="d-flex align-items-center justify-content-center">
-                    <a href="#" class="btn btn-primary">Download Resume</a>
+    <!-- About Me Section -->
+    <section class="container py-5">
+        <div class="text-center">
+            <img src="images/profile.jpg" alt="Hinal Patel" class="profile-img">
+            <h2>About Me</h2>
+            <p>Hi, I’m Hinal Patel, a passionate software developer dedicated to crafting innovative and efficient solutions.
+            With a strong foundation in coding and problem-solving, I thrive on turning complex challenges into seamless experiences.
+            My portfolio showcases a range of projects that reflect my commitment to excellence, creativity, and continuous learning.
+            I am always eager to explore new technologies and collaborate on exciting opportunities.</p>
+            <a href="resume.pdf" class="btn btn-primary" download>Download Resume</a>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Skills</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <h4>HTML & CSS</h4>
+                    <p>Responsive and modern web design.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>JavaScript & React</h4>
+                    <p>Interactive UI and dynamic applications.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Node.js & Golang</h4>
+                    <p>Backend APIs and microservices.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Skills Section -->
-        <section class="bg-light py-5">
-            <div class="container">
-                <h2 class="text-center mb-4">Skills</h2>
-                <div class="row text-center">
-                    <div class="col-md-4 pb-5">
-                        <h4>HTML & CSS</h4>
-                        <p>Proficient in building responsive layouts.</p>
-                    </div>
-                    <div class="col-md-4 pb-5">
-                        <h4>JavaScript</h4>
-                        <p>Experienced in creating interactive features.</p>
-                    </div>
-                    <div class="col-md-4 pb-5">
-                        <h4>Bootstrap</h4>
-                        <p>Skilled in using Bootstrap for design.</p>
-                    </div>
-                    <div class="col-md-4 pb-5">
-                        <h4>Golang</h4>
-                        <p>Experienced in creating complex services</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section class="py-5">
-            <div class="container">
-                <h2 class="text-center mb-4">Projects</h2>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="card mb-4">
-                            <div class="card-body">
-                                <h5 class="card-title">Budget App</h5>
-                                <p class="card-text">Budget app utilizes React.js and golang to create an application people can use to help manage their finances</p>
-                                <a href="#" class="btn btn-primary">View Project</a> <!-- Include link to projects if applicable -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card mb-4">
-                            <div class="card-body">
-                                <h5 class="card-title">Movie Tracker</h5>
-                                <p class="card-text">This application keeps track of movie reviews that users have written and allows comparisons between other users. It was created using node.js for the backend while utilizing HTML, CSS and Bootstrap for the frontend</p>
-                                <a href="#" class="btn btn-primary">View Project</a>
-                            </div>
+    <!-- Projects Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Projects</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Budget App</h5>
+                            <p class="card-text">A finance management app built with React and Golang.</p>
+                            <a href="#" class="btn btn-primary">View Project</a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- Education Section -->
-        <section class="bg-light py-5">
-            <div class="container">
-                <h2 class="text-center mb-4">Education</h2>
-                <h4>Mohawk College</h4>
-                <div class="d-flex justify-content-between">
-                    <p class="fw-bold">Software Development Advanced Diploma</p>
-                    <p>2025-2029</p>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Movie Tracker</h5>
+                            <p class="card-text">A movie review tracking app built with Node.js.</p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
+    <!-- Education Section -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center">Education</h2>
+            <p class="text-center"><strong>Software support(448) - Mohawk College </strong></p>
+        </div>
+    </section>
 
-        <!-- Contact Section -->
-        <section class="py-5">
-            <div class="container">
-                <h2 class="text-center mb-4">Contact</h2>
-                <form>
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="Your Name">
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="Your Email">
-                    </div>
-                    <div class="mb-3">
-                        <label for="message" class="form-label">Message</label>
-                        <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send</button>
-                </form>
+    <!-- Contact Section -->
+    <section class="container py-5">
+        <h2 class="text-center">Contact</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name">
             </div>
-        </section>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Your Email">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+    </section>
 
-        <!-- Footer -->
-        <footer class="bg-dark text-white text-center py-3"></footer>
-    </body>
-</html>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Hinal Patel | All Rights Reserved</p>
+    </footer>
+
