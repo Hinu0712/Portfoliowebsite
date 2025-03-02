@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Skills - OM PATEL</title>
+    <style>
+        /* Styles for the buttons and content sections */
+        .hidden {
+            display: none;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2.8rem;
+            background-color: black;
+            border-radius: 4rem;
+            font-size: 1.6rem;
+            color: #808080; /* Changed to grey */
+            letter-spacing: 0.3rem;
+            font-weight: 600;
+            border: 2px solid #808080; /* Changed to grey */
+            transition: 0.3s ease;
+            cursor: pointer;
+            margin-bottom: 1rem;
+        }
+
+        .btn:hover {
+            transform: scale(1.03);
+            background-color: #808080; /* Grey */
+            color: black;
+            box-shadow: 0 0 25px #808080; /* Grey */
+        }
+
+        .content-section {
+            margin-top: 2rem;
+            color: white;
+        }
+
+        /* Initially stack buttons vertically */
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        /* After a button is clicked, display the buttons horizontally */
+        .btn-container.horizontal {
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-container.horizontal .btn {
+            margin-right: 1rem;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">OM PATEL</a>
+		<span class="hamburger" id="hamburgerMenu"><i class="fa-solid fa-bars"></i></span>
+        <nav>
+            <a href="index.html">Home</a>
+			<a href="About.html">About Me</a>
+            <a href="skills.html" class="active">Skills</a>
+            <a href="achievements.html">Achievements</a>
+            <a href="#">Resume</a>
+            <a href="#">CV</a>
+        </nav>
+    </header>
+    <section class="skills">
+        <div class="skills-content">
+            </br></br></br></br></br>
+            <h1>Skills & Expertise</h1></br></br></br></br>
+            <p>Here’s a summary of my key skills and areas of expertise:</p>
+            <br>
+            <!-- Container for buttons -->
+            <div id="btn-container" class="btn-container">
+                <!-- Buttons for selecting different skills -->
+                <button class="btn" onclick="showContent('html-content')">HTML</button></br>
+                <button class="btn" onclick="showContent('java-content')">JAVA</button></br>
+                <button class="btn" onclick="showContent('python-content')">PYTHON</button></br>
+                <button class="btn" onclick="showContent('php-content')">PHP</button></br>
+                <button class="btn" onclick="showContent('.net-content')">.NET</button></br>
+            </div>
+
+            <!-- Content sections for each skill -->
+            <div id="html-content" class="content-section hidden">
+                <h2>HTML</h2>
+                <p>HTML is the standard markup language for creating web pages. I have extensive experience using semantic HTML5 elements to structure web content effectively.</p>
+            </div>
+
+            <div id="java-content" class="content-section hidden">
+                <h2>JAVA</h2>
+                <p>Java is a versatile programming language. I have worked on various projects, using Java for backend development, mobile applications, and building efficient algorithms.</p>
+            </div>
+
+            <div id="python-content" class="content-section hidden">
+                <h2>PYTHON</h2>
+                <p>Python is my go-to language for data science, automation, and web development. I have utilized Python for a wide range of applications, from scripting to machine learning.</p>
+            </div>
+
+            <div id="php-content" class="content-section hidden">
+                <h2>PHP</h2>
+                <p>PHP is a server-side scripting language. I have used it for creating dynamic and interactive web applications and building RESTful APIs.</p>
+            </div>
+
+            <div id=".net-content" class="content-section hidden">
+                <h2>.NET</h2>
+                <p>I have experience in using .NET framework for developing robust enterprise-level applications, including web services and desktop applications.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // JavaScript function to show the relevant content section based on button click
+        function showContent(contentId) {
+            // Hide all content sections
+            const contents = document.querySelectorAll('.content-section');
+            contents.forEach(content => content.classList.add('hidden'));
+
+            // Show the selected content section
+            const selectedContent = document.getElementById(contentId);
+            if (selectedContent) {
+                selectedContent.classList.remove('hidden');
+            }
+
+            // Change the button container layout to horizontal after the first click
+            const btnContainer = document.getElementById('btn-container');
+            btnContainer.classList.add('horizontal');
+        }
+    </script>
+	
+	  <script>
+        // Existing JavaScript code
+
+        // Add hamburger menu toggle functionality
+        document.getElementById("hamburgerMenu").addEventListener("click", function() {
+            document.querySelector("nav").classList.toggle("active");
+        });
+    </script>
+</body>
+</html>
