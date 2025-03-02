@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title> HTML Project -HINAL PATEL</title>
+    <style>
+        body {
+            text-align: center;
+        }
+		.calc-btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            margin-top: 30px;
+            background-color: black;
+            color: #808080;
+            border-radius: 4rem;
+            font-size: 1.5rem;
+            border: 2px solid #808080;
+            text-decoration: none;
+            letter-spacing: 0.2rem;
+            transition: 0.3s ease;
+        }
+
+        .calc-btn:hover {
+            background-color: #808080;
+            color: black;
+            transform: scale(1.05);
+        }
+		
+		
+		
+		.pro-btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            margin-top: 30px;
+            background-color: black;
+            color: #808080;
+            border-radius: 4rem;
+            font-size: 1.5rem;
+            border: 2px solid #808080;
+            text-decoration: none;
+            letter-spacing: 0.2rem;
+            transition: 0.3s ease;
+        }
+
+        .pro-btn:hover {
+            background-color: #808080;
+            color: black;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">HINAL PATEL</a>
+		<span class="hamburger" id="hamburgerMenu"><i class="fa-solid fa-bars"></i></span>
+        <nav>
+            <a href="index.html"> Home</a>
+            <a href="about.html">About Me</a>
+            <a href="skills.html">Skills</a>
+            <a href="achievements.html">Achievements</a>
+            <a href="#" >Resume</a>
+            <a href="#" >CV</a>
+        </nav>
+    </header></br></br></br></br>
+    
+    </br></br></br></br><h1>My Projects</h1></br></br>
+    
+    <div class="projects-container">
+		
+		
+		<a href="calculatorNew.html" class="calc-btn">CALCULATOR</a></br>
+		<a href="new 1.html" class="calc-btn">HANGING MAN GAME</a></br>
+	        <a href="food-website-main\food-website-main\index.html" class="calc-btn">RESTAURANT</a></br></br></br></br></br>
+		<a href="Projects.html" class="pro-btn">BACK</a>
+		<script>
+        // Existing JavaScript code
+
+        // Add hamburger menu toggle functionality
+        document.getElementById("hamburgerMenu").addEventListener("click", function() {
+            document.querySelector("nav").classList.toggle("active");
+        });
+    </script>
+	
+	
+
+
+</body>
+</html>
