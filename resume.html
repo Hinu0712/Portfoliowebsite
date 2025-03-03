@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Resume | Hinal Patel</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">HINAL PATEL</a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="skills.html">Skills</a>
+            <a href="resume.html" class="active">Resume</a>
+        </nav>
+
+        <!-- Hamburger Menu Icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <section class="resume">
+        <h1>My Resume</h1>
+        <p>View or download my resume below.</p>
+
+        <!-- Resume Viewer -->
+        <div class="resume-container">
+            <iframe src="resume.pdf" width="80%" height="600px"></iframe>
+        </div>
+
+        <!-- Download Resume Button -->
+        <a href="resume.pdf" download class="btn">Download Resume</a>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
