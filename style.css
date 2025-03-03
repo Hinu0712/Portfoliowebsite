@@ -59,6 +59,10 @@ nav a.active {
     font-size: 5rem;
     font-weight: 700;
 }
+.home a {
+    font-size: 5rem;
+    font-weight: 700;
+}
 
 span {
     color: #808080;
